@@ -6,7 +6,7 @@
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  width: 100%;
 }
 .heroes li {
   cursor: pointer;
@@ -17,6 +17,7 @@
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
+  display: inline-block;
 }
 .heroes li:hover {
   color: #607D8B;
@@ -45,6 +46,13 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+.heroes .content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 115px;
+}
 button {
   font-family: Arial;
   background-color: #eee;
@@ -63,4 +71,5 @@ button.delete {
   margin-right: .8em;
   background-color: gray !important;
   color:white;
+  margin-left: 10px;
 }
